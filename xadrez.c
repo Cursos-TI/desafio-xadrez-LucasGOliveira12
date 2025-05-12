@@ -36,7 +36,8 @@ int b = 1, r = 1; // Iniciais de cada peça
     {
         printf("Direita \n"); // Imprime a direção do movimento
     }
-    
+        printf("\n");
+
     // Movimento do Bispo 5 casas para a Cima, Direita
     printf("Movimento do Bispo! \n");
     while (b <= 5)
@@ -44,7 +45,8 @@ int b = 1, r = 1; // Iniciais de cada peça
         printf("Cima, Direita \n"); // Imprime a direção do movimento
         b++;
     }
-    
+        printf("\n");
+
     // Movimento da Rainha 8 casas para a Esquerda
     printf("Movimento da Rainha! \n");
     do
@@ -53,6 +55,23 @@ int b = 1, r = 1; // Iniciais de cada peça
         r++;
     } while (r <= 8);
 
+        printf("\n");
+        
+    // Desafio Aventureiro
+    // Movimentação do Cavalo 2 casas para Baixo e 1 para a Esquerda
+    int movimentoCompleto = 1; //Flag para controlar o movimento em 'L'
+
+    printf("Movimento do Cavalo! \n");
+    while (movimentoCompleto--)
+    {
+        for (int c = 1; c <= 2; c++)
+        {
+            printf("Baixo \n"); //Imprime "Baixo" duas vezes
+        }
+        
+        printf("Esquerda \n"); //Imprime "Esquerda" uma vez
+    }
+    
 
     return 0;
 }
